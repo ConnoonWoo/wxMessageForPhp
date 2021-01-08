@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/index', 'IndexController@index');
+
+Route::get('/getUser', 'IndexController@getUser');
+Route::get('/baseAuth', 'IndexController@baseAuth');
+Route::get('/getQrCode', 'IndexController@getQrCode');
+
